@@ -33,13 +33,36 @@ document.addEventListener("DOMContentLoaded", function(event){
         scrollAmount += 5;
 
         if (scrollAmount >= scrollingtext.scrollWidth) {
-            console.log("reset");
             scrollAmount = 0;
         }
-        console.log(scrollAmount);
         scrollingtext.scrollLeft = scrollAmount;
     }, 20);
 
+    const cardContainer = document.querySelector('.ag-grid');
+    const scrollAmounta = 280;
+    let scrollInterval;
 
+    function startAutoscroll() {
+        scrollInterval = setInterval(() => {
+            if (cardContainer.scrollLeft + cardContainer.clientWidth >= cardContainer.scrollWidth) {
+                
+                console.log("reset");
+                cardContainer.scrollTo({ left: 0, behavior: "smooth" });
+            } else {
+                console.log("scroll");
+                cardContainer.scrollBy({ left: scrollAmounta, behavior: "smooth" });
+            }
+        }, 3000);
+    }
+
+    function stopAutoscroll() {
+        clearInterval(scrollInterval);
+    }
+
+    startAutoscroll();
+
+    //Pause autoscroll on hover
+    cardContainer.addEventListener('mouseenter', stopAutoscroll);
+    cardContainer.addEventListener('mouseleave', startAutoscroll);
 });
 

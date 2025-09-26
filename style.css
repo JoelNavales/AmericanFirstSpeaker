@@ -133,6 +133,7 @@ nav img{
 
 /* INDEX */
 /* ---- Article Gallery ---- */
+
 .article-gallery {
   padding-block: clamp(1.25rem, 2.5vw, 2.5rem);
   background: transparent; /* sits cleanly on your cream bg */
@@ -174,6 +175,8 @@ nav img{
   scroll-snap-type: x mandatory;
   scroll-padding: .5rem;
   -webkit-overflow-scrolling: touch;
+
+  overflow: hidden;
 }
 .ag-grid::-webkit-scrollbar { height: 8px; }
 .ag-grid::-webkit-scrollbar-thumb { background: #e1d7c9; border-radius: 999px; }
