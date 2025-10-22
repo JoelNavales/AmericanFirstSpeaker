@@ -352,7 +352,8 @@ nav img{
 }
 .main-nav{
   display:inline-block;      /* puts contact under the links */   
-  text-align: end;           /* space between links and contact */
+  text-align: end;    
+  margin-right: -28px;       /* space between links and contact */
 }
 .nav-list{
   display:inline-block;

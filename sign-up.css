@@ -1,0 +1,118 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  background-color: #f8f6f0; /* matches your footer */
+  color: #1f3b73; /* dark blue text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #1f3b73;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #3c557a;
+  margin-top: 0.5rem;
+}
+
+/* Sign Up Form Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex: 1;
+}
+
+.signup-form {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #1f3b73;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #1f3b73;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-group input:focus {
+  border-color: #1f3b73;
+  outline: none;
+}
+
+/* Button */
+.btn-signup {
+  width: 100%;
+  background-color: #1f3b73;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-signup:hover {
+  background-color: #274b94;
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #1f3b73;
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #3c557a;
+}
